@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .inner {
+        @apply p-8 text-center bg-gray-200 -mt-[7rem] pt-[12rem] md:pt-[12rem] -z-50 block
+    }
+    .header{
+        @apply md:w-[45rem] md:mx-auto
+    }
+    .header h3{
+        @apply font-bold text-4xl mb-12 md:mb-8
+    }
+    .header span{
+        @apply text-2xl text-neutral-gray leading-relaxed
+
+    }
+
+
+
+
+
+    .cards_container{
+        @apply flex flex-col md:flex-row gap-12 mt-24
+    }
+    .card{
+        @apply bg-white p-2 my-6 relative rounded-lg
+    }
+    .card_image{
+        @apply bg-primary-dark-violet absolute p-5 left-10 -top-10 rounded-full items-center justify-center
+    }
+    .card_bottom {
+        @apply bg-white p-4 my-4 text-left
+    }
+    .card_bottom h6 {
+        @apply font-bold text-2xl mb-2 mt-8
+    }
+    .card_bottom span {
+        @apply text-neutral-gray
+    }
+}
