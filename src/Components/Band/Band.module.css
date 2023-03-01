@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .get_started_btn{
+        @apply bg-primary-cyan text-white text-xl px-6 py-4 rounded-full
+    }
+    .inner{
+        @apply text-center bg-primary-dark-violet p-4 py-24 md:py-12 bg-band-mobile bg-center md:bg-band-desktop bg-no-repeat bg-cover
+    }
+    /*
+    .inner{
+        box-shadow: 0 0 0 100vmax hsl(257, 27%, 26%);
+        clip-path: inset(0-100vmax);
+    }
+    */
+}
