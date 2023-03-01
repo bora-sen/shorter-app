@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .inner {
+        @apply flex p-8 justify-between text-neutral-gray
+    }
+    .links{
+        @apply hidden md:block
+    }
+    .hamburger{
+        @apply md:hidden
+    }
+    .inner ul{
+        @apply hidden md:flex gap-12 
+    }
+    .right_section{
+        @apply hidden md:block
+    }
+    .sign_up_button{
+        @apply font-bold bg-primary-cyan text-white text-lg px-[1.5rem] py-[.75rem] rounded-full ml-6
+    }
+}
