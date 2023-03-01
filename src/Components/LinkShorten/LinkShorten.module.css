@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .inner {
+        @apply relative p-8 z-50 
+    }
+
+    .inputForm{
+        @apply bg-primary-dark-violet bg-shorten-mobile md:bg-shorten-desktop bg-cover bg-center p-8 flex flex-col gap-4 rounded-lg md:flex-row md:mx-12 md:p-14
+    }
+    .inputForm input{
+        @apply py-4 rounded-md text-xl px-2 md:w-full md:h-auto
+    }
+    .inputForm button {
+        @apply font-bold text-2xl text-white bg-primary-cyan py-4 rounded-md md:w-[14rem]
+    }
+}
