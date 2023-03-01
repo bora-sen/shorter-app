@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .inner{
+        @apply p-6 flex flex-col-reverse md:flex-row md:justify-around
+    }
+
+    .left_section{
+        @apply text-center md:text-left mt-12 md:w-[36rem] md:my-auto
+    }
+    .left_section h1{
+        @apply font-bold text-6xl md:text-7xl md:leading-[5.8rem] leading-[4.3rem] mb-5
+    }
+    .left_section h2{
+        @apply text-neutral-gray text-2xl leading-[2.5rem] mb-5
+    }
+    .left_section button{
+        @apply bg-primary-cyan text-white text-xl px-6 py-4 rounded-full
+    }
+
+
+    .right_section{
+        @apply relative top-0 left-24
+    }
+    .right_section img{
+        @apply w-full md:ml-8 
+    }
+
+}
